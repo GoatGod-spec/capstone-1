@@ -1,6 +1,7 @@
 💰 Expense Tracker: (aka Goated Bank!)
 
 A simple Java console application that helps you track income, expenses, and monthly spending reports.
+
 Built by: using Java 17 and Maven.
 
 📋 Features:
