@@ -4,6 +4,8 @@ A simple Java console application that helps you track income, expenses, and mon
 
 Built by: using Java 17 and Maven.
 
+<img width="446" height="332" alt="image" src="https://github.com/user-attachments/assets/545154ad-2189-4c22-8365-8667b211900b" />
+
 📋 Features:
 Being able to add/deposit to your current balance
 
