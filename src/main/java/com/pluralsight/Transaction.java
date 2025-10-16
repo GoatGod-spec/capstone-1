@@ -63,10 +63,10 @@ public class Transaction {
 
 
         public String toString() {
-            return String.format("%s %s %18s %6s %10.2f", date, time, item, vendor, amount);
+            return String.format("%s | %s | %18s | %6s | %10.2f", date, time, item, vendor, amount);
         }
-        public static String getTableHeader(){
-            return String.format("%s %8s %18s %10s %18s %10s-------------------------------------------------", "Date", "Time", "Item", "Vendor", "Amount");
+        private static String getTableHeader(){
+            return String.format("%s | %8s | %18s | %10s | %18s | %10s", "Date", "Time", "Item", "Vendor", "Amount");
         }
 
     }
