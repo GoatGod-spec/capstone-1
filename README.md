@@ -9,6 +9,8 @@ Built by: using Java 17 and Maven.
 📋 Features:
 Being able to add/deposit to your current balance
 
+<img width="393" height="196" alt="image" src="https://github.com/user-attachments/assets/bacd5f5f-889e-48e6-9d95-7f9f7edcc67f" />
+
 Also able to make payments to anything with ease!
 
 And able to access to transactions/bank statments
