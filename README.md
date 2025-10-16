@@ -4,10 +4,14 @@ A simple Java console application that helps you track income, expenses, and mon
 Built by: using Java 17 and Maven.
 
 📋 Features:
-System.out.println("Being able to add/deposit to your current balance")
+Being able to add/deposit to your current balance
+
 Also able to make payments to anything with ease!
+
 And able to access to transactions/bank statments
+
 Being ableto access by (Month to Date), (Previous Month), (Year to Date), and by (Vendor)!
+
 So simple but AMAZING no?
 
 ⚙️ Installation
