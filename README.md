@@ -46,4 +46,5 @@ Make sure you have the following installed:
 Git Bash, Java 17 or higher, and Intellij
 
 🤝 Contributing
+I give my thanks to sites like W3schools they helped me alot throughout this jounrey and, 
 I'd like to say my thanks to my talent team/classmates of YearUp of UntappedPotential, I couldn't have done it without reaching out for your help and solidifying learning the code on this capstone journey. 
