@@ -17,7 +17,7 @@ public class Main {
     public static ArrayList<Transaction> getTransactionsFromFile() {
         ArrayList<Transaction> result = new ArrayList<Transaction>();
         try {
-            FileReader fileReader = new FileReader("transaction.csv");
+            FileReader fileReader = new FileReader("transactions.csv");
             BufferedReader br = new BufferedReader(fileReader);
 
             String line;
@@ -46,8 +46,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String mainMenu = """
-                
+        System.out.println("// ========================================\n" +
+                "// \uD83D\uDCB0 WELCOME TO GOATED BANKING \uD83D\uDCB0\n" +
+                "// Manage your money like a true GOAT \uD83D\uDC10\n" +
+                "// ========================================\n");
+        String mainMenu = """                
                 Hello there, What would you like to do?
                 D) Add Deposit 
                 P) Make Payment(Debit)
@@ -69,10 +72,11 @@ public class Main {
                     break;
                 case "L":
                     ledgerDisplay();
-                case "E":
+                case "X":
                     return;
                 default:
                     System.out.println("INVALID COMMAND! Please select one of the follow commands.");
+                    break;
             }
         }
     }
@@ -97,7 +101,7 @@ public class Main {
         String time = current.format(timeFormatter);
 
         try {
-            FileWriter fileWriter = new FileWriter("transaction.csv", true);
+            FileWriter fileWriter = new FileWriter("transactions.csv", true);
             BufferedWriter bufferWriter = new BufferedWriter(fileWriter);
             bufferWriter.newLine();
             bufferWriter.write("Deposit completed, Information submitted " + date + "|" + time + "|" + itemDesc + "|" + vendorInfo + "|" + amount);
@@ -136,7 +140,7 @@ public class Main {
         String time = current.format(timeFormatter);
 
         try {
-            FileWriter fileWriter = new FileWriter("transaction.csv", true);
+            FileWriter fileWriter = new FileWriter("transactions.csv", true);
             BufferedWriter bufferWriter = new BufferedWriter(fileWriter);
             bufferWriter.newLine();
             bufferWriter.write("Payment complete, Information submitted " + date + "|" + time + "|" + itemDesc + "|" + vendorInfo + "|" + amount);
@@ -172,10 +176,10 @@ public class Main {
                     reportMenu();
                     break;
                 case "H":
+                    ledgerDisplay();
                     return;
                 default:
                     System.out.println("INVALID COMMAND! Please select one of the follow commands.");
-                    break;
             }
         }
     }
