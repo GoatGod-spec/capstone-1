@@ -13,7 +13,7 @@ Also able to make payments to anything with ease!
 
 And able to access to transactions/bank statments
 
-Being ableto access by (Month to Date), (Previous Month), (Year to Date), and by (Vendor)!
+Being able to access by (Month to Date), (Previous Month), (Year to Date), and by (Vendor)!
 
 So simple but AMAZING no?
 
