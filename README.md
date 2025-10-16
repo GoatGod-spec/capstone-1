@@ -19,7 +19,7 @@ Also able to make payments to anything with ease!
 <img width="469" height="230" alt="image" src="https://github.com/user-attachments/assets/47e05cbc-5e7e-4594-9d85-04d1ea2c57f8" /> <img width="914" height="207" alt="image" src="https://github.com/user-attachments/assets/438afbfe-d5db-40bd-8311-07b9e6645c16" />
 
 
-And able to access to transactions/bank statments
+And able to access to transactions/bank statements
 
 <img width="412" height="377" alt="image" src="https://github.com/user-attachments/assets/aa112c84-b681-4e20-a164-621cd6700c86" />
 
