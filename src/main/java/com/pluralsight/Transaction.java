@@ -3,6 +3,7 @@ package com.pluralsight;
 import javax.swing.text.html.HTMLDocument;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Transaction {
 
@@ -63,10 +64,12 @@ public class Transaction {
 
 
         public String toString() {
-            return String.format("%s | %s | %18s | %6s | %10.2f", date, time, item, vendor, amount);
+            DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            return String.format("%s | %s | %s | %s | %.2f", date.format(dateFormatter), time.format(timeFormatter), item, vendor, amount);
         }
         private static String getTableHeader(){
-            return String.format("%s | %8s | %18s | %10s | %18s | %10s", "Date", "Time", "Item", "Vendor", "Amount");
+            return String.format("%s | %s | %s | %s | %s | %s", "Date", "Time", "Item", "Vendor", "Amount");
         }
 
     }

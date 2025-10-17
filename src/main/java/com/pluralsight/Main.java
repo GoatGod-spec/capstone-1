@@ -63,7 +63,7 @@ public class Main {
 
             String command = ConsoleHelper.promptForString("Enter your command: ");//Tanner helped with consi
 
-            switch (command) {
+            switch (command.toUpperCase()) {
                 case "D":
                     addDeposit();
                     break;
@@ -83,9 +83,9 @@ public class Main {
 
     public static void addDeposit() {
         System.out.println("Add Deposit");
-        String itemDesc = ConsoleHelper.promptForString("Enter Item Description:");
-        String vendorInfo = ConsoleHelper.promptForString("Enter Vendor Information:");
-        double amount = ConsoleHelper.promptForDouble("Enter Amount (Numerals Only):"); //Henry help with prompt issue
+        String itemDesc = ConsoleHelper.promptForString("Enter Item Description: ");
+        String vendorInfo = ConsoleHelper.promptForString("Enter Vendor Information: ");
+        double amount = ConsoleHelper.promptForDouble("Enter Amount (Numerals Only): "); //Henry help with prompt issue
         System.out.println("Deposit Success, Information added");
         Transaction newDeposit = new Transaction(LocalDate.now(), LocalTime.now(), itemDesc, vendorInfo, amount);
         transactions.add(newDeposit);
@@ -121,9 +121,9 @@ public class Main {
     // similar steps to making a deposit, I simplified the step by copying some of the steps previous
     public static void makePayment() {
         System.out.println("Make a Payment");
-        String itemDesc = ConsoleHelper.promptForString("Enter Description");
-        String vendorInfo = ConsoleHelper.promptForString("Enter Vendor Information");
-        double amount = ConsoleHelper.promptForDouble("Enter Amount");
+        String itemDesc = ConsoleHelper.promptForString("Enter Description: ");
+        String vendorInfo = ConsoleHelper.promptForString("Enter Vendor Information: ");
+        double amount = ConsoleHelper.promptForDouble("Enter Amount: ");
         amount = -Math.abs(amount); //to make sure the payment is negative because it's taking away
         System.out.println("Payment Success, Information added");
         Transaction payment = new Transaction(LocalDate.now(), LocalTime.now(), itemDesc, vendorInfo, amount);
@@ -167,7 +167,7 @@ public class Main {
 
             String command = ConsoleHelper.promptForString("Enter your command: ");
 
-            switch (command) {
+            switch (command.toUpperCase()) {
                 case "A":
                     displayEntries(transactions);
                     break;
@@ -233,7 +233,7 @@ public class Main {
                 """;
         while (true) {
             System.out.println(reportMenu);
-            String command = ConsoleHelper.promptForString("Enter your command: ").trim();
+            String command = ConsoleHelper.promptForString("Enter your command: ");
 
             switch (command) {
                 case "1":
