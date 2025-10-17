@@ -1,5 +1,10 @@
 💰 Expense Tracker: (aka Goated Bank!)
 
+My name is Dustin, Upcoming Application Developer and YearUp LC4/Untapped Potential  
+
+Here we have our first project that is very close to what we would be doing as if we’re working as actually App Devs for a bank or company and we would be putting our 4 weeks of lectures and exercise to the test.
+
+
 ALLOW ME TO DEMONSTRATE! 📏
 
 A simple Java console application that helps you track income, expenses, and monthly spending reports.
