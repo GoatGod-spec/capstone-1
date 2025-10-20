@@ -61,7 +61,7 @@ public class Main {
         while (true) {
             System.out.println(mainMenu);
 
-            String command = ConsoleHelper.promptForString("Enter your command: ");//Tanner helped with consi
+            String command = ConsoleHelper.promptForString("Enter your command: ");//Tanner helped with consistency
 
             switch (command.toUpperCase()) {
                 case "D":
